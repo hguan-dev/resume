@@ -1,0 +1,184 @@
+%-----------SETUP-----------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{marvosym}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{top=0.4in, bottom=0.2in, left=0.4in, right=0.4in}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\pdfgentounicode=1
+
+\newcommand{\sectionrule}{
+  \vspace{-3.5pt}\noindent\makebox[\linewidth]{\textbf{-----------------------------------------------------------------------------------------------------------------------------}}\vspace{-21.5pt}
+}
+
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\vspace{-2pt}\sectionrule\vspace{-3pt}]
+
+\newcommand{\resumeEducation}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeExperience}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#4} \\
+      \textit{#2} & \textit{#3} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{#1} & \textbf{#2} \\
+        \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeAwardHeading}[2]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{#1} $|$ \textit{#2} \\
+        \end{tabular*}\vspace{-10pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-1pt}}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, rightmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+%-----------HEADER-----------
+\center{{\textbf{\scalebox{2.5}{Harry Guan}}} \\ \vspace{6pt}}
+
+\small{\href{mailto:guanhuai2014@gmail.com}{\raisebox{-0.1\height}\faEnvelope ~{guanhuai2014@gmail.com}}} $|$
+\small{\raisebox{-0.1\height}\faPhone ~{(669) 279 8250}} $|$ 
+\small{\href{https://linkedin.com/in/~harryguan/}{\raisebox{-0.1\height}\faLinkedin ~{$\sim$harryguan}}} $|$
+\small{\href{https://github.com/hguan-dev/}{\raisebox{-0.1\height}\faGithub ~{hguan-dev}}}
+\vspace{4pt}
+
+%-----------EDUCATION-----------
+\section*{Education}
+  \resumeSubHeadingListStart
+    \resumeEducation
+      {Northwestern University}{\textbf{Expected Jun. 2027}}
+      {B.A. in Computer Science; Minor in Mathematics, B.M. in Trombone Performance}{Evanston, IL}
+      \resumeItemListStart
+        \resumeItem{\textbf{Cumulative GPA:} \mbox{3.9/4.0} $|$ \textbf{Major GPA:} \mbox{4.0/4.0} $|$ \textbf{Dean's List:} \mbox{4/4}}
+        \resumeItem{\textbf{Relevant Coursework:} Operating Systems, Distributed Systems, Computer Systems, Computer Networking, Data Structures,
+        Databases, Intro to C/C++, Intro to Python, Discrete Math, Linear Algebra, Probability and Statistics, Multivariable Calculus}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%
+
+%-----------EXPERIENCE-----------
+\section*{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeExperience
+    {Meta}{Incoming Software Engineer Intern}{Menlo Park, CA}{Jun. 2025 -- Sep. 2025}
+
+    \resumeExperience
+      {Overture Games - Music Education Startup}{Software Engineer Intern}{Chicago, IL}{Jun. 2024 -- Sep. 2024}
+      \resumeItemListStart
+        \resumeItem{Engineered a Computer Vision \textbf{RESTful API} using Audiveris for Optical Music Recognition, handling HTTP requests with Python scripting within Flask, and a Node.js backend to convert sheet music to machine-readable formats with \textbf{85\% accuracy}}
+        \resumeItem{Published an open-source website (\href{https://sheetmusictomidi.com/}{\textcolor{blue}{\underline{sheetmusictomidi.com}}}) on an \textbf{AWS EC2} instance using Nginx for load balancing and PM2 for process management, with Google Analytics showing \textbf{5,000+ monthly uses, saving 20,000+ hours} of transcription}
+        \resumeItem{Iteratively scaled the API, implementing \textbf{automatic file cleanup and storage management}, enabling seamless support for \textbf{400+ concurrent users} while ensuring optimal performance and resource utilization across multiple regions}
+      \resumeItemListEnd
+
+    \resumeExperience
+      {Aigentless - PropTech Startup}{Software Engineer Intern}{Chicago, IL}{Jun. 2024 -- Sep. 2024}
+      \resumeItemListStart
+        \resumeItem{Designed an LLM chatbot with \textbf{92\% accuracy on housing market pricing data} to uncover key traits influencing prices by conducting large-scale web scraping with GraphQL parsing and PyTorch for clustering analysis and regression}  
+        \resumeItem{Established and \textbf{maintained CI/CD pipelines} using Jenkins, integrated automated testing frameworks with PyTest, and utilized Docker for containerization to ensure consistent environments across development, testing, and production}
+        \resumeItem{Developed and optimized Aigentless' B2B2C web platform (\href{https://aigentless.com/}{\textcolor{blue}{\underline{aigentless.com}}}) using React and FastAPI to create a fully autonomous apartment search experience with \textbf{real-time data analytics}, intuitive dashboards, and speedy back-end processing}
+      \resumeItemListEnd
+
+    \resumeExperience
+      {Cupertino City Council}{Software Engineer Intern}{Cupertino, CA}{Jun. 2023 -- Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Directed the design and development of a website to streamline communication and information dissemination between campaign managers and voters, significantly contributing to the Cupertino Vice Mayor's successful re-election campaign}
+        \resumeItem{Leveraged Google Analytics to pinpoint and implement data-driven UI/UX improvements, \textbf{increasing viewer retention by 34\%}}
+        \resumeItem{Led a team of 6 web design interns in HTML5 and CSS front-end development by managing design and engineering timelines, overseeing GitHub pull requests and ensuring quality and timely project completion in a fast-paced environment}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%
+
+%-----------PROJECTS-----------
+\section*{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {Prelude Planner \href{https://github.com/hguan-dev/prelude-planner-app/}{\textcolor{blue}{(\underline{GitHub})}}}{Jun. 2024 -- Sep. 2024}
+        \resumeItemListStart
+          \resumeItem{Spearheaded development of a mobile studio assistant app for Northwestern’s Bienen School of Music with a cross-functional team, \textbf{enhancing scheduling efficiency by 44\%} and enabling efficient file read/write with greedy graph coloring and PostgreSQL}
+          \resumeItem{Administered real-time scheduling updates using Socket.IO, optimized a robust backend for scalability with Node.js and Express, and ensured seamless and reliable communication with notification functionality, user authentication, and data validation}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {Books and Breakfast App \href{https://github.com/DISC-NU/books-and-breakfast-app}{\textcolor{blue}{(\underline{GitHub})}}}{Jan. 2024 -- Jun. 2024}
+        \resumeItemListStart
+          \resumeItem{Streamlined volunteer onboarding of an education non-profit by centralizing information, ridesharing, and chat functionality on a mobile app, \textbf{achieving a 63\% increase in volunteer retention} with improved coordination between volunteers and organizers}
+          \resumeItem{Planned and built React Native TypeScript app using Figma for design mockups and Expo Go for testing, and elevated app performance by incorporating Firebase Realtime Database to store data securely, speed up retrieval, and reduce server load}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+%
+
+%-----------HONORS AND AWARDS-----------
+\section*{Honors and Awards}
+    \resumeSubHeadingListStart
+
+      \resumeAwardHeading
+        {USA Coding Olympiad}{Gold Division, Top 7\% in Contestants}
+
+      \resumeAwardHeading
+        {JPMorganChase Code For Good Hackathon}{Project Manager, 2nd Place Overall}
+
+      \resumeAwardHeading
+        {Northwestern University Algorithmic Trading Competition}{Team Lead, 2nd Place Cryptocurrency Exchange}
+
+      \resumeAwardHeading
+        {American Invitational Mathematics Examination Qualifier (4x)}{Top 5\% in the American Mathematics Competition}
+
+    \resumeSubHeadingListEnd
+%
+
+%-----------ADDITIONAL-----------
+\section*{Additional}
+ \begin{itemize}[leftmargin=0in, rightmargin=0in, label={}]
+    \item{
+     \textbf{Programming Languages:} C++, Python, C, Java, Go, R, Bash, SQL, JavaScript, TypeScript, C\#, \LaTeX \\
+     \textbf{Frameworks/Libraries:} PyTorch, scikit-learn, Node.js, Flask, Express, PyTest, Socket.IO, FastAPI, React, Pandas, NumPy \\
+     \textbf{Infrastructure:} UNIX, Amazon Web Services, MongoDB, Nginx, Jenkins, PostgreSQL, MySQL, Firebase, Docker, Git, GitHub + Actions \\ 
+     \textbf{Certifications:} Amazon Web Services Certified Solutions Architect - Associate, Machine Learning and Data Science with Python \\
+    }
+ \end{itemize}
+%
+
+\end{document}
