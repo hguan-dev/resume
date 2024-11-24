@@ -18,12 +18,12 @@ jobs:
 
       - name: Commit Files
         run: |
-          rm Resume.pdf
-          mv src.pdf Huai_Guan_resume.pdf
+          rm Harry_Guan_resume.pdf
+          mv src.pdf Harry_Guan_resume.pdf
           ls
-          git add Huai_Guan_resume.pdf
+          git add Harry_Guan_resume.pdf
           git status
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "Updating Huai_Guan_resume.pdf"
+          git commit -m "Updating Harry_Guan_resume.pdf"
           git push
