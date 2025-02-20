@@ -1,1 +1,1 @@
-[View](Harry_Guan_resume.pdf)
+![View](display/resume.png)
