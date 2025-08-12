@@ -1,5 +1,5 @@
  %-----------SETUP-----------
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage{titlesec}
@@ -13,7 +13,7 @@
 \usepackage[english]{babel}
 \usepackage{graphicx}
 \usepackage{geometry}
-\geometry{top=0.4in, bottom=0.2in, left=0.4in, right=0.4in}
+\geometry{top=0.35in, bottom=0.2in, left=0.4in, right=0.4in}
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -69,13 +69,12 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
-
 \begin{document}
 
 %-----------HEADER-----------
 \center{{\textbf{\scalebox{2.5}{Harry Guan}}} \\ \vspace{6pt}}
 
-\small{\href{mailto:hguan.dev@gmail.com}{\raisebox{-0.1\height}\faEnvelope ~{hguan.dev@gmail.com}}} $|$
+\small{\href{mailto:hguan.trading@gmail.com}{\raisebox{-0.1\height}\faEnvelope ~{hguan.trading@gmail.com}}} $|$
 \small{\raisebox{-0.1\height}\faPhone ~{(669) 279 8250}} $|$ 
 \small{\href{https://linkedin.com/in/~harryguan/}{\raisebox{-0.1\height}\faLinkedin ~{$\sim$harryguan}}} $|$
 \small{\href{https://github.com/hguan-dev/}{\raisebox{-0.1\height}\faGithub ~{hguan-dev}}}
@@ -88,9 +87,9 @@
       {Northwestern University}{\textbf{Expected June 2027}}
       {B.A. in Mathematics and Computer Science, B.M. in Trombone Performance}{Evanston, IL}
       \resumeItemListStart
-        \resumeItem{\textbf{Cumulative GPA:} \mbox{3.9/4.0} $|$ \textbf{Major GPA:} \mbox{4.0/4.0} $|$ \textbf{Dean's List:} \mbox{6/6 Quarters}}
+        \resumeItem{\textbf{Cumulative GPA:} \mbox{3.8/4.0} $|$ \textbf{Major GPA:} \mbox{3.9/4.0} $|$ \textbf{Dean's List:} \mbox{6/6 Quarters}}
         \resumeItem{\textbf{Relevant Coursework:} Probability and Stochastic Processes, Derivatives Markets, Deep Learning, Machine Learning,  \\
-        Operating Systems, Distributed Systems, Database Systems, Parallel Computing, Design and Analysis of Algorithms }
+        Operating Systems, Database Systems, Parallel Computing, Linear Algebra, Design and Analysis of Algorithms }
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 %
@@ -98,24 +97,32 @@
 %-----------EXPERIENCE-----------
 \section*{Experience}
   \resumeSubHeadingListStart
-
-    \resumeExperience
-      {IMC Trading}{Incoming Quantitative Trading Intern}{Chicago, IL}{June 2026 -- August 2026}
       
     \resumeExperience
-      {LinkedIn}{Incoming Software Engineer Intern - System Infrastructure}{Mountain View, CA}{June 2025 -- September 2025}
+      {LinkedIn}{Machine Learning Engineer Intern - Ads}{Mountain View, CA}{June 2025 -- September 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered a \textbf{Dirichlet}-parameterizing deep CTR model that predicts full click-type probability distributions (replacing prior scalar pCTR) using \textbf{DCNv2} interaction towers, and isotonic calibration embeddings, enabling \textbf{Thompson Sampling} by outputting $\alpha$, $\beta$ parameters and \textbf{optimizing a digamma-based loss} to jointly model accidental, intentional, and no-click events}
+        
+
+        \resumeItem{Improved inference accuracy and \textbf{reduced loss by 17\%} via architecture enhancements including vectorized murmur-hash input pipelines and single-pass isotonic calibration, validated in A/B tests to \textbf{increase annualized ad revenue by \$1.2M+}}
+        
+        \resumeItem{Implemented \textbf{clipped inverse propensity weighting} in training to address selection bias, applied \textbf{isotonic calibration} to chargeability and click-type heads for improved probability alignment, and instrumented per-head ranking quality metrics to monitor \textbf{calibration and performance} across engagement, legacy, and website-visit objectives}
+
+
+
+    \resumeItemListEnd
 
     \resumeExperience
       {IMC Trading}{Launchpad - Quantitative Trading Cohort}{Chicago, IL}{May 2025}
       \resumeItemListStart
         \resumeItem{Secured \textbf{1st place} out of 30 in IMC Trading’s futures market‑making competition by implementing dynamic bid-ask spread sizing using the \textbf{Avellaneda–Stoikov} model and data‑feed pipeline monitoring to capture order‑flow edge}
-        \resumeItem{Engaged in intensive lectures and simulations covering \textbf{options pricing, futures mechanics}, market microstructure, and quantitative trading strategies, with hands-on applications in risk management and position sizing}
+        \resumeItem{Engaged in intensive lectures and simulations covering \textbf{options pricing, futures mechanics}, market microstructure, and overall quantitative trading strategies, with hands-on applications in \textbf{risk management} and position sizing}
       \resumeItemListEnd
 
     \resumeExperience
-      {Susquehanna International Group}{Discovery Day - Technology Cohort}{Bala Cynwyd, PA}{April 2025}
+      {Susquehanna International Group}{Discovery Day - Quantitative Trading Cohort}{Bala Cynwyd, PA}{April 2025}
       \resumeItemListStart
-        \resumeItem{Participated in lectures and technical workshops on \textbf{low-latency systems}, trading infrastructure; completed a hands-on BTC \textbf{data pipelining and arbitrage challenge} using Pandas simulating real-time strategy deployment}
+        \resumeItem{Achieved the \textbf{highest PnL} in the trading cohort of 40 by engineering a pandas-based batch processing pipeline to analyze \textbf{30,000+ BTC order book records} across multiple exchanges, identifying arbitrage opportunities and securing profit.}
 
       \resumeItemListEnd
 
@@ -127,11 +134,10 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-        {NU FinTech Club Trading Competition \href{https://github.com/hguan-dev/prelude-planner-app/}{\textcolor{blue}{(\underline{GitHub})}}}{May 2025 -- Present}
+        {NU FinTech Club Trading Competition \href{https://github.com/hguan-dev/prelude-planner-app/}{\textcolor{blue}{(\underline{GitHub})}}}{Jun. 2025 -- Present}
         \resumeItemListStart
           \resumeItem{Advancing a \textbf{C++ exchange simulator} to support dynamic market scenarios, including manual trading and multi-exchange arbitrage; researching current  market structure to inform order book and participant design}
           \resumeItem{Engineered Python trading agents, including sporadic signal-based traders and participants placing information-rich large orders, to simulate complex market dynamics and test algorithm robustness in volatile exchange conditions}
-
         \resumeItemListEnd
 
       \resumeProjectHeading
@@ -155,6 +161,9 @@
         {USA Coding Olympiad}{Gold Division, Top 7\% in Contestants}
 
       \resumeAwardHeading
+        {Susquehanna International Group Arbitrage Competition}{1st Place Overall}
+
+      \resumeAwardHeading
         {IMC Trading Low Latency Competition}{2nd Place Overall}
 
       \resumeAwardHeading
@@ -173,9 +182,9 @@
  \begin{itemize}[leftmargin=0in, rightmargin=0in, label={}]
     \item{
      \textbf{Programming Languages:} Python, C++, C, Golang, Rust, Java, TypeScript, Bash, x86 Assembly \\
-     \textbf{Frameworks/Libraries:} NumPy, PyTorch, scikit-learn, Pandas, PyTest, PyBind, GTest, Node.js, Matplotlib\\
+     \textbf{Frameworks/Libraries:} NumPy, TensorFlow, Pandas, PyTorch, scikit-learn, PyTest, PyBind, GTest, Node.js, Matplotlib\\
      \textbf{Infrastructure:} UNIX, CUDA, Amazon Web Services, GCC, OpenMP, Nginx, Jenkins, Docker, Git, GitHub + Actions \\ 
-     \textbf{Interests:} Texas Hold'em Poker, Teamfight Tactics, League of Legends, Orchestral Conducting
+     \textbf{Interests:} Texas Hold'em Poker, Teamfight Tactics, League of Legends, Merge Tactics, Classical Music, Orchestral Conducting
     }
  \end{itemize}
 %
