@@ -87,8 +87,8 @@
       {Northwestern University}{\textbf{Expected June 2027}}
       {B.A. in Mathematics and Computer Science, B.M. in Trombone Performance}{Evanston, IL}
       \resumeItemListStart
-        \resumeItem{\textbf{Cumulative GPA:} \mbox{3.8/4.0} $|$ \textbf{Major GPA:} \mbox{3.9/4.0} $|$ \textbf{Dean's List:} \mbox{6/6 Quarters}}
-        \resumeItem{\textbf{Relevant Coursework:} Probability and Stochastic Processes, Derivatives Markets, Linear Regression, Machine Learning, \\ 
+        \resumeItem{\textbf{Cumulative GPA:} \mbox{3.8/4.0} $|$ \textbf{Major GPA:} \mbox{3.9/4.0} $|$ \textbf{Dean's List:} \mbox{7/7 Quarters}}
+        \resumeItem{\textbf{Relevant Coursework:} Probability and Stochastic Processes, Financial Mathematics, Regression Analysis, Machine Learning, \\ 
         Operating Systems, Database Systems, Parallel Computing, Linear Algebra, Design and Analysis of Algorithms }
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -99,20 +99,14 @@
   \resumeSubHeadingListStart
 
     \resumeExperience
-      {IMC Trading}{Incoming Quantitative Trading Intern}{Chicago, IL}{June 2026 -- September 2026}
+      {IMC Trading}{Incoming Quantitative Trading Intern}{Chicago, IL}{June 2026 -- August 2026}
     \resumeExperience
       {LinkedIn}{Machine Learning Engineer Intern - Ads}{Mountain View, CA}{June 2025 -- September 2025}
       \resumeItemListStart
-        \resumeItem{Engineered a \textbf{Dirichlet}-parameterizing deep CTR model that predicts full click-type probability distributions (replacing prior scalar pCTR) using \textbf{DCNv2} interaction towers, and isotonic calibration embeddings, enabling \textbf{Thompson Sampling} by outputting $\alpha$, $\beta$ parameters and \textbf{optimizing a digamma-based loss} to jointly model accidental, intentional, and no-click events}
-        
-
-        \resumeItem{Improved inference accuracy and \textbf{reduced loss by 17\%} via architecture enhancements including vectorized murmur-hash input pipelines and single-pass isotonic calibration, validated in A/B tests to \textbf{increase annualized ad revenue by \$1.2M+}}
-        
-        \resumeItem{Implemented \textbf{clipped inverse propensity weighting} in training to address selection bias, applied \textbf{isotonic calibration} to chargeability and click-type heads for improved probability alignment, and instrumented per-head ranking quality metrics to monitor \textbf{calibration and performance} across engagement, legacy, and website-visit objectives}
-
-
-
-    \resumeItemListEnd
+        \resumeItem{Engineered a \textbf{Dirichlet}-parameterizing deep CTR model with \textbf{DCNv2} interaction towers, optimizing a digamma-based loss to output $\alpha, \beta$ parameters for \textbf{Thompson Sampling} and predict full click-type distributions versus singular scalar output}
+        \resumeItem{Implemented \textbf{clipped inverse propensity weighting} to mitigate selection bias and applied \textbf{isotonic calibration} across chargeability and click-type heads, ensuring strict probability alignment for multiple ad objectives}
+        \resumeItem{Designed vectorized murmur-hash input pipelines and instrumented per-head ranking metrics, improving inference accuracy to \textbf{reduce loss by 17\%} and driving a \textbf{\$1.2M+ increase} in annualized advertisement revenue}
+      \resumeItemListEnd
 
     \resumeExperience
       {IMC Trading}{Launchpad - Quantitative Trading Cohort}{Chicago, IL}{May 2025}
@@ -128,7 +122,7 @@
 
       \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
 %
 
 %-----------PROJECTS-----------
@@ -136,19 +130,20 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-        {NU FinTech Club Trading Competition \href{https://github.com/hguan-dev/prelude-planner-app/}{\textcolor{blue}{(\underline{GitHub})}}}{Jun. 2025 -- Present}
+        {Texas Hold'em Poker Solver \href{https://github.com/hguan-dev/cfr-solver/}{\textcolor{blue}{(\underline{GitHub})}}}{August 2025 -- December 2025}
         \resumeItemListStart
-          \resumeItem{Advancing a \textbf{C++ exchange simulator} to support dynamic market scenarios, including manual trading and multi-exchange arbitrage; researching current  market structure to inform order book and participant design}
+          \resumeItem{Engineered a high-throughput \textbf{Monte Carlo CFR} C++ solver to approximate Nash Equilibria via iterative self-play, implementing \textbf{zero-allocation} hot paths to generate \textbf{2.2M+} ground-truth samples at \textbf{$>$50,000 iterations/sec} }
+          \resumeItem{Designed an XGBoost and PyTorch pipeline to predict optimal mixed-strategy probability distributions from 58 engineered features, achieving a \textbf{0.274 KL Divergence} and \textbf{0.206 Total Variation Distance} to compress the solution space for real-time inference}
+        \resumeItemListEnd
+        
+      \resumeProjectHeading
+        {NU FinTech Club Trading Competition \href{https://github.com/northwesternfintech/NUTC}{\textcolor{blue}{(\underline{GitHub})}}}{June 2025 -- September 2025}
+        \resumeItemListStart
+          \resumeItem{Advanced a \textbf{C++ exchange simulator} to support dynamic market scenarios, including manual trading and multi-exchange arbitrage; researching current  market structure to inform order book and participant design}
           \resumeItem{Engineered Python trading agents, including sporadic signal-based traders and participants placing information-rich large orders, to simulate complex market dynamics and test algorithm robustness in volatile exchange conditions}
         \resumeItemListEnd
 
-      \resumeProjectHeading
-        {Texas Hold'em Poker Solver \href{https://github.com/hguan-dev/poker-solver/}{\textcolor{blue}{(\underline{GitHub})}}}{December 2024 -- May 2025}
-        \resumeItemListStart
-          \resumeItem{Developed a  \textbf{Counterfactual Regret Minimization solver} to compute Nash Equilibria across over \boldmath{$10^{17}$} \textbf{non-deterministic game states}, leveraging \textbf{ordinal bucketing} to reduce game tree analysis time by over \textbf{78\%}}
-          \resumeItem{Created an \textbf{open-source} research-focused C++ poker engine library, optimizing source code to \textbf{reduce average simulation runtime by 72.3\%} by improving memory access patterns for \textbf{cache locality} and identifying bottlenecks}
-        \resumeItemListEnd
-        
+
     \resumeSubHeadingListEnd
 %
 
@@ -160,10 +155,10 @@
         {IMC Trading Market-Making Competition}{1st Place Overall}
 
       \resumeAwardHeading
-        {USA Coding Olympiad}{Gold Division, Top 7\% in Contestants}
-
-      \resumeAwardHeading
         {Susquehanna International Group Arbitrage Competition}{1st Place Overall}
+        
+      \resumeAwardHeading
+        {American Invitational Mathematics Examination Qualifier (4x)}{Top 5\% in the American Mathematics Competition}
 
       \resumeAwardHeading
         {IMC Trading Low Latency Competition}{2nd Place Overall}
@@ -171,8 +166,9 @@
       \resumeAwardHeading
         {Northwestern University Algorithmic Trading Competition}{2nd Place Cryptocurrency Exchange}
 
+
       \resumeAwardHeading
-        {American Invitational Mathematics Examination Qualifier (4x)}{Top 5\% in the American Mathematics Competition}
+        {USA Coding Olympiad}{Gold Division, Top 7\% in Contestants}
       
       \vspace{-4pt}
 
@@ -186,7 +182,7 @@
      \textbf{Programming Languages:} Python, C++, C, Golang, Rust, Java, TypeScript, Bash, x86 Assembly \\
      \textbf{Frameworks/Libraries:} NumPy, TensorFlow, Pandas, PyTorch, scikit-learn, PyTest, PyBind, GTest, Node.js, Matplotlib\\
      \textbf{Infrastructure:} UNIX, CUDA, Amazon Web Services, GCC, OpenMP, Nginx, Jenkins, Docker, Git, GitHub + Actions \\ 
-     \textbf{Interests:} Texas Hold'em Poker, Teamfight Tactics, League of Legends, Merge Tactics, Classical Music, Orchestral Conducting
+     \textbf{Interests:} Texas Hold'em Poker, Teamfight Tactics, League of Legends, Classical Music, Orchestral Conducting, Mystery Novels
     }
  \end{itemize}
 %
